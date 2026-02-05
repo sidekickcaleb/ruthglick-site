@@ -1,0 +1,10 @@
+{
+  "name": "ruthvglick-redesign",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "bun run server.ts"
+  },
+  "dependencies": {
+    "hono": "^4.0.0"
+  }
+}
