@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruth V. Glick — Arbitrator &amp; Mediator</title>
+  <meta name="description" content="Ruth V. Glick is an independent arbitrator and mediator with over 1,000 disputes resolved. Serving on AAA, ICDR, CPR, and ICC panels.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* ========== RESET & BASE ========== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    :root {
+      --navy-deep: #0d1b2a;
+      --navy: #1b2a4a;
+      --navy-light: #243b6a;
+      --gold: #c9a84c;
+      --gold-light: #dcc07a;
+      --gold-pale: #f0e6c8;
+      --cream: #faf8f2;
+      --cream-dark: #f0ece0;
+      --text-dark: #1a1a1a;
+      --text-body: #3a3a3a;
+      --text-muted: #6b6b6b;
+      --white: #ffffff;
+      --section-padding: 100px 0;
+      --container-width: 1100px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text-body);
+      background: var(--white);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-family: 'Playfair Display', Georgia, serif;
+      color: var(--navy);
+      line-height: 1.3;
+    }
+
+    a {
+      color: var(--gold);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover { color: var(--gold-light); }
+
+    .container {
+      max-width: var(--container-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ========== NAVIGATION ========== */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(13, 27, 42, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+      transition: all 0.4s ease;
+    }
+    nav.scrolled {
+      box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+    }
+    .nav-inner {
+      max-width: var(--container-width);
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+    }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--white);
+      letter-spacing: 0.5px;
+    }
+    .nav-logo span { color: var(--gold); }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 8px;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,0.75);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      padding: 8px 14px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--gold);
+      background: rgba(201,168,76,0.08);
+    }
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      margin: 5px 0;
+      transition: all 0.3s ease;
+      border-radius: 2px;
+    }
+    .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    /* ========== HERO ========== */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 50%, var(--navy-light) 100%);
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(ellipse at 70% 50%, rgba(201,168,76,0.06) 0%, transparent 70%);
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 200px;
+      background: linear-gradient(to top, rgba(13,27,42,0.8), transparent);
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      padding-top: 70px;
+    }
+    .hero-text { padding: 40px 0; }
+    .hero-subtitle {
+      display: inline-block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 2px solid var(--gold);
+    }
+    .hero h1 {
+      font-size: clamp(2.5rem, 5vw, 3.8rem);
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 24px;
+      line-height: 1.15;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--gold);
+      font-weight: 500;
+    }
+    .hero-description {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.8;
+      margin-bottom: 36px;
+      max-width: 520px;
+    }
+    .hero-stats {
+      display: flex;
+      gap: 40px;
+      margin-top: 10px;
+    }
+    .hero-stat {
+      text-align: left;
+    }
+    .hero-stat-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--gold);
+      display: block;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .hero-stat-label {
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+    }
+    .hero-photo-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero-photo-frame {
+      position: relative;
+      max-width: 380px;
+      width: 100%;
+    }
+    .hero-photo-frame::before {
+      content: '';
+      position: absolute;
+      top: -12px; right: -12px;
+      width: 100%; height: 100%;
+      border: 2px solid var(--gold);
+      border-radius: 8px;
+      z-index: 0;
+    }
+    .hero-photo {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+      display: block;
+    }
+    .hero-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--gold);
+      color: var(--navy-deep);
+      padding: 14px 32px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      margin-bottom: 44px;
+    }
+    .hero-cta:hover {
+      background: var(--gold-light);
+      color: var(--navy-deep);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(201,168,76,0.3);
+    }
+    .hero-cta svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    /* ========== SECTIONS ========== */
+    section {
+      padding: var(--section-padding);
+    }
+    .section-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .section-label {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .section-title {
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .section-divider {
+      width: 60px;
+      height: 3px;
+      background: var(--gold);
+      margin: 0 auto;
+    }
+
+    /* ========== ABOUT ========== */
+    .about { background: var(--white); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .about-content p {
+      margin-bottom: 20px;
+      font-size: 1.02rem;
+      color: var(--text-body);
+    }
+    .panels-list {
+      list-style: none;
+      margin: 20px 0;
+    }
+    .panels-list li {
+      position: relative;
+      padding: 12px 0 12px 28px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      font-size: 0.95rem;
+    }
+    .panels-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 8px; height: 8px;
+      background: var(--gold);
+      border-radius: 50%;
+    }
+    .about-sidebar {
+      background: var(--cream);
+      padding: 40px;
+      border-radius: 8px;
+      border-left: 4px solid var(--gold);
+    }
+    .about-sidebar h3 {
+      font-size: 1.3rem;
+      margin-bottom: 24px;
+    }
+    .peer-orgs {
+      list-style: none;
+    }
+    .peer-orgs li {
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text-dark);
+    }
+    .peer-orgs li:last-child { border-bottom: none; }
+    .peer-orgs li span {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 400;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    /* ========== HIGHLIGHTS BAR ========== */
+    .highlights {
+      background: var(--navy);
+      padding: 60px 0;
+    }
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+    .highlight-card {
+      text-align: center;
+      padding: 30px 20px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 8px;
+      border: 1px solid rgba(201,168,76,0.1);
+      transition: all 0.3s ease;
+    }
+    .highlight-card:hover {
+      background: rgba(255,255,255,0.07);
+      border-color: rgba(201,168,76,0.25);
+      transform: translateY(-4px);
+    }
+    .highlight-icon {
+      font-size: 1.6rem;
+      margin-bottom: 14px;
+    }
+    .highlight-card h4 {
+      font-size: 1rem;
+      color: var(--gold);
+      margin-bottom: 8px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+    }
+    .highlight-card p {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.6;
+    }
+
+    /* ========== EXPERIENCE ========== */
+    .experience { background: var(--cream); }
+    .experience-intro {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 50px;
+      font-size: 1.05rem;
+      color: var(--text-body);
+    }
+    .cases-section {
+      margin-bottom: 50px;
+    }
+    .cases-section h3 {
+      font-size: 1.4rem;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--gold);
+      display: inline-block;
+    }
+    .cases-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 30px;
+    }
+    .case-item {
+      position: relative;
+      padding: 10px 0 10px 20px;
+      font-size: 0.92rem;
+      line-height: 1.5;
+      color: var(--text-body);
+    }
+    .case-item::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-weight: 700;
+    }
+    .cases-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 20px;
+      padding: 10px 24px;
+      background: var(--navy);
+      color: var(--gold);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .cases-toggle:hover {
+      background: var(--navy-light);
+    }
+    .cases-hidden { display: none; }
+    .cases-hidden.show { display: grid; }
+
+    /* ========== ADR ACTIVITIES ========== */
+    .adr { background: var(--white); }
+    .adr-category {
+      margin-bottom: 50px;
+    }
+    .adr-category h3 {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      color: var(--navy);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .adr-category h3::before {
+      content: '';
+      width: 4px;
+      height: 28px;
+      background: var(--gold);
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+    .adr-list {
+      list-style: none;
+    }
+    .adr-list li {
+      padding: 10px 0 10px 24px;
+      position: relative;
+      font-size: 0.93rem;
+      border-bottom: 1px solid rgba(0,0,0,0.04);
+    }
+    .adr-list li::before {
+      content: '›';
+      position: absolute;
+      left: 4px;
+      color: var(--gold);
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+    .adr-list a {
+      color: var(--navy);
+      font-weight: 500;
+      border-bottom: 1px dashed var(--gold);
+    }
+    .adr-list a:hover {
+      color: var(--gold);
+    }
+    .adr-role-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .adr-role-card {
+      padding: 20px 24px;
+      background: var(--cream);
+      border-radius: 6px;
+      border-left: 3px solid var(--gold);
+    }
+    .adr-role-title {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+    .adr-role-desc {
+      font-size: 0.93rem;
+      color: var(--text-body);
+    }
+
+    /* ========== PUBLICATIONS ========== */
+    .publications { background: var(--cream); }
+    .pub-category {
+      margin-bottom: 44px;
+    }
+    .pub-category h3 {
+      font-size: 1.25rem;
+      margin-bottom: 20px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--gold);
+      display: inline-block;
+    }
+    .pub-list {
+      list-style: none;
+    }
+    .pub-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      font-size: 0.93rem;
+      line-height: 1.7;
+    }
+    .pub-list li:last-child { border-bottom: none; }
+    .pub-list em, .pub-list i { color: var(--text-dark); }
+    .presentations-container {
+      max-height: 500px;
+      overflow-y: auto;
+      padding-right: 10px;
+      margin-top: 10px;
+    }
+    .presentations-container::-webkit-scrollbar { width: 5px; }
+    .presentations-container::-webkit-scrollbar-track { background: var(--cream-dark); border-radius: 3px; }
+    .presentations-container::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+
+    /* ========== BACKGROUND ========== */
+    .background-section { background: var(--white); }
+    .background-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .background-content p {
+      margin-bottom: 24px;
+      font-size: 1.02rem;
+      text-indent: 2em;
+      line-height: 1.8;
+    }
+    .background-edu {
+      margin-top: 40px;
+      padding: 30px 40px;
+      background: var(--cream);
+      border-radius: 8px;
+      border-left: 4px solid var(--gold);
+    }
+    .background-edu h4 {
+      font-size: 1.15rem;
+      margin-bottom: 16px;
+    }
+    .background-edu p {
+      font-size: 0.95rem;
+      text-indent: 0;
+      margin-bottom: 8px;
+    }
+
+    /* ========== REFERENCES ========== */
+    .references { background: var(--navy-deep); color: var(--white); }
+    .references .section-title { color: var(--white); }
+    .ref-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    .ref-card {
+      background: rgba(255,255,255,0.04);
+      padding: 36px;
+      border-radius: 8px;
+      border: 1px solid rgba(201,168,76,0.12);
+      transition: all 0.3s ease;
+    }
+    .ref-card:hover {
+      background: rgba(255,255,255,0.07);
+      border-color: rgba(201,168,76,0.25);
+    }
+    .ref-card-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--gold-pale);
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+    .ref-card-title a {
+      color: var(--gold-pale);
+      border-bottom: 1px dashed var(--gold);
+    }
+    .ref-card-source {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+    }
+    .ref-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(201,168,76,0.15);
+    }
+    .ref-badge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 20px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 6px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.7);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .ref-note {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.6);
+      font-style: italic;
+    }
+
+    /* ========== CONTACT ========== */
+    .contact { background: var(--cream); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .contact-info h3 {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+    }
+    .contact-info .contact-role {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      font-weight: 500;
+    }
+    .contact-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .contact-detail-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--navy);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-detail-icon svg {
+      width: 18px;
+      height: 18px;
+      fill: var(--gold);
+    }
+    .contact-detail-text {
+      padding-top: 4px;
+    }
+    .contact-detail-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+    .contact-detail-value {
+      font-size: 1rem;
+      color: var(--text-dark);
+      font-weight: 500;
+    }
+    .contact-detail-value a {
+      color: var(--navy);
+      border-bottom: 1px dashed var(--gold);
+    }
+    .contact-map {
+      background: var(--white);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+    .contact-map iframe {
+      width: 100%;
+      height: 360px;
+      border: none;
+      display: block;
+    }
+    .contact-map-label {
+      padding: 16px 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      border-top: 1px solid rgba(0,0,0,0.06);
+    }
+
+    /* ========== FOOTER ========== */
+    footer {
+      background: var(--navy-deep);
+      padding: 50px 0 30px;
+      border-top: 3px solid var(--gold);
+    }
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .footer-brand h4 {
+      font-size: 1.3rem;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .footer-brand p {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+      max-width: 300px;
+    }
+    .footer-links h5 {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+      font-family: 'Inter', sans-serif;
+    }
+    .footer-links ul {
+      list-style: none;
+    }
+    .footer-links li {
+      margin-bottom: 8px;
+    }
+    .footer-links a {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.6);
+    }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-contact-item {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 8px;
+    }
+    .footer-contact-item a {
+      color: rgba(255,255,255,0.6);
+    }
+    .footer-contact-item a:hover {
+      color: var(--gold);
+    }
+    .footer-bottom {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      text-align: center;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.3);
+    }
+
+    /* ========== ANIMATIONS ========== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .fade-in-delay-1 { transition-delay: 0.1s; }
+    .fade-in-delay-2 { transition-delay: 0.2s; }
+    .fade-in-delay-3 { transition-delay: 0.3s; }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 900px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+      }
+      .hero-text { order: 2; }
+      .hero-photo-wrapper { order: 1; }
+      .hero-description { margin: 0 auto 36px; }
+      .hero-stats { justify-content: center; }
+      .hero-photo-frame { max-width: 280px; }
+      .about-grid { grid-template-columns: 1fr; }
+      .cases-grid { grid-template-columns: 1fr; }
+      .highlights-grid { grid-template-columns: 1fr 1fr; }
+      .adr-role-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .nav-links {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: rgba(13, 27, 42, 0.98);
+        flex-direction: column;
+        padding: 20px;
+        gap: 4px;
+        transform: translateY(-120%);
+        transition: transform 0.3s ease;
+      }
+      .nav-links.open { transform: translateY(0); }
+      .nav-links a {
+        padding: 12px 16px;
+        font-size: 0.9rem;
+      }
+      .nav-toggle { display: block; }
+    }
+    @media (max-width: 600px) {
+      :root { --section-padding: 70px 0; }
+      .hero-stats { flex-direction: column; gap: 20px; }
+      .highlights-grid { grid-template-columns: 1fr; }
+      .ref-cards { grid-template-columns: 1fr; }
+      .footer-inner { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">Ruth V. <span>Glick</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#adr">ADR Activities</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#background">Background</a></li>
+      <li><a href="#references">References</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <span class="hero-subtitle">Independent Arbitrator &amp; Mediator</span>
+      <h1>Resolving Complex Disputes with <em>Clarity &amp; Expertise</em></h1>
+      <p class="hero-description">With a distinguished career spanning law, business, and education, Ruth V. Glick brings unparalleled skill to domestic and international dispute resolution.</p>
+      <a href="#contact" class="hero-cta">
+        Schedule a Consultation
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-number">1,000+</span>
+          <span class="hero-stat-label">Disputes Resolved</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number">30+</span>
+          <span class="hero-stat-label">Years of Practice</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number">4</span>
+          <span class="hero-stat-label">International Panels</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-photo-wrapper">
+      <div class="hero-photo-frame">
+        <img src="/images/ruth-photo.jpeg" alt="Ruth V. Glick" class="hero-photo">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">About</span>
+      <h2 class="section-title">A Leader in Dispute Resolution</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-content fade-in">
+        <p>Ruth Glick is an independent arbitrator and mediator whose skill and knowledge of ADR stem from her background as a lawyer, businesswoman and educator. She has considerable experience as a dispute resolver in both her legal and business careers and has resolved well over 1,000 disputes.</p>
+        <p>She specializes in financial, technology, business, commercial, securities, healthcare, medical products, real estate and labor and employment disputes.</p>
+        <p style="font-weight:500; color: var(--navy); margin-top:30px; margin-bottom:14px;">Ms. Glick serves on the following legal dispute resolution panels:</p>
+        <ul class="panels-list">
+          <li>Large and Complex Case, the National Commercial, Labor and Employment Arbitration and Master Mediation Panels of the American Arbitration Association (AAA)</li>
+          <li>International Centre for Dispute Resolution (ICDR)</li>
+          <li>International Institute for Conflict Prevention &amp; Resolution (CPR)</li>
+          <li>International Chamber of Commerce (ICC)</li>
+          <li>Office of the Independent Administrator (Kaiser Healthcare)</li>
+          <li>American Health Lawyers Association (AHLA) ADR Panel</li>
+          <li>Federal and state court, permanent government, labor and international ADR panels</li>
+        </ul>
+      </div>
+      <div class="about-sidebar fade-in fade-in-delay-1">
+        <h3>Peer-Nominated Organizations</h3>
+        <ul class="peer-orgs">
+          <li>
+            Chartered Institute of Arbitrators
+            <span>Fellow (FCIArb)</span>
+          </li>
+          <li>
+            College of Commercial Arbitrators
+            <span>Fellow &amp; Former Board Member</span>
+          </li>
+          <li>
+            International Academy of Mediators
+            <span>Distinguished Fellow</span>
+          </li>
+          <li>
+            National Academy of Distinguished Neutrals
+            <span>Member</span>
+          </li>
+        </ul>
+        <p style="margin-top:28px; font-size: 0.93rem; line-height:1.7; color: var(--text-body);">Ms. Glick currently serves as a member of the Council of the American Arbitration Association–International Centre for Dispute Resolution (AAA-ICDR), where she is co-chair of the Mediation Committee and a member of the Arbitration, and Law and Practice standing committees.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HIGHLIGHTS ===== -->
+<section class="highlights">
+  <div class="container">
+    <div class="highlights-grid">
+      <div class="highlight-card fade-in">
+        <div class="highlight-icon">⚖️</div>
+        <h4>ABA DR Section Chair</h4>
+        <p>Chaired the Dispute Resolution Section of the American Bar Association, 2013–2014</p>
+      </div>
+      <div class="highlight-card fade-in fade-in-delay-1">
+        <div class="highlight-icon">🌍</div>
+        <h4>Founded WIDR</h4>
+        <p>Created Women in Dispute Resolution — a growing national &amp; international movement</p>
+      </div>
+      <div class="highlight-card fade-in fade-in-delay-2">
+        <div class="highlight-icon">🎓</div>
+        <h4>UC Hastings Professor</h4>
+        <p>Adjunct Professor of Arbitration &amp; ADR Law for ten years</p>
+      </div>
+      <div class="highlight-card fade-in fade-in-delay-3">
+        <div class="highlight-icon">🏆</div>
+        <h4>Distinguished Service</h4>
+        <p>Distinguished Service Award for ADR from California Lawyers Association</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section class="experience" id="experience">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Experience</span>
+      <h2 class="section-title">Representative Cases</h2>
+      <div class="section-divider"></div>
+    </div>
+    <p class="experience-intro fade-in">Ms. Glick has resolved a number of large and complex domestic and international disputes. Below are some representative cases.</p>
+
+    <!-- Arbitrated Cases -->
+    <div class="cases-section fade-in">
+      <h3>Arbitrated Disputes</h3>
+      <div class="cases-grid" id="arbitratedCases">
+        <div class="case-item">Substantial breach of contract and tort claims in crypto related dispute</div>
+        <div class="case-item">Emergency relief and jurisdiction claims in international business dispute</div>
+        <div class="case-item">Misclassification claims in California — wage and hour mass dispute</div>
+        <div class="case-item">National physician and real estate partnership break-up</div>
+        <div class="case-item">Healthcare payor/payee disputes</div>
+        <div class="case-item">Breach of contract claims between vendor and big box retailer</div>
+        <div class="case-item">Determination of employee/contractor status in nationwide wage and hour action</div>
+        <div class="case-item">Lead arbitrator in wage/hour case arising out of class action waiver</div>
+        <div class="case-item">International trademark dispute between two business entities</div>
+        <div class="case-item">Breach of Fiduciary Duty and Legal Malpractice claims regarding H-1B business immigration (Panel Chair)</div>
+      </div>
+      <div class="cases-grid cases-hidden" id="arbitratedMore">
+        <div class="case-item">Breach of contract claims regarding B-5 Immigration investments</div>
+        <div class="case-item">Billing disputes between a medical funding group and medical provider</div>
+        <div class="case-item">Nationwide class action wage and hour claims involving retailers, trucking and communications companies</div>
+        <div class="case-item">Fair real estate market value of Silicon Valley commercial property</div>
+        <div class="case-item">Partnership break-up of multi-million dollar index and financial instruments trading firm</div>
+        <div class="case-item">International product distribution contract involving $18 million in claims</div>
+        <div class="case-item">Bitcoin and Cryptocurrency mining and investment involving $4 million in claims</div>
+        <div class="case-item">Executive employment discharge and defamation</div>
+        <div class="case-item">Multiple claimants allegations of malfeasance against hedge fund managers</div>
+        <div class="case-item">Wealth management firm partnership dispute</div>
+        <div class="case-item">Wrongful termination and age discrimination</div>
+        <div class="case-item">Large multi-party securities action against hedge fund managers</div>
+        <div class="case-item">Retail shopping center — intra-family dispute regarding management and control</div>
+        <div class="case-item">Termination of executive of large health care center</div>
+        <div class="case-item">Partnership dispute regarding retail shopping center</div>
+        <div class="case-item">Medical malpractice wrongful death, surgical negligence, failure to diagnose</div>
+        <div class="case-item">Breach of multi million-dollar telecommunications contract</div>
+        <div class="case-item">Interpretation of buy-out provision</div>
+        <div class="case-item">Misrepresentation, fraud and breach of fiduciary duties in investments</div>
+        <div class="case-item">Breach of settlement agreement</div>
+        <div class="case-item">Misappropriation of corporate funds</div>
+        <div class="case-item">Rescission of merger and acquisition agreement</div>
+        <div class="case-item">Labor/management issues of termination, discipline, insubordination, contract interpretation and drug use in public and private sector</div>
+        <div class="case-item">Racial discrimination claim against U.S. Govt. agency</div>
+        <div class="case-item">Employment/recruiting with non-compete agreement</div>
+        <div class="case-item">Trademark license disputes</div>
+        <div class="case-item">Breach of agreement for optical component joint venture and sales</div>
+      </div>
+      <button class="cases-toggle" onclick="toggleCases('arbitratedMore', this)">Show More Cases ↓</button>
+    </div>
+
+    <!-- Mediated Cases -->
+    <div class="cases-section fade-in">
+      <h3>Mediated Disputes</h3>
+      <div class="cases-grid" id="mediatedCases">
+        <div class="case-item">Large construction partnership dissolution</div>
+        <div class="case-item">Breach of contract and tort claims in venture capital fund investment</div>
+        <div class="case-item">Breach of contract dispute between two tech companies</div>
+        <div class="case-item">Enterprise software pricing dispute</div>
+        <div class="case-item">Breach of contract software licensing agreement</div>
+        <div class="case-item">Termination of executive with major Silicon Valley company</div>
+        <div class="case-item">Multi million-dollar dispute between Japanese distribution company and U.S. medical device manufacturer</div>
+        <div class="case-item">Health care provider contract disputes</div>
+      </div>
+      <div class="cases-grid cases-hidden" id="mediatedMore">
+        <div class="case-item">Adverse Possession Action</div>
+        <div class="case-item">Multiple party and carrier homeowner association dispute</div>
+        <div class="case-item">Securities broker nationwide class action sexual harassment lawsuits</div>
+        <div class="case-item">Derivative and other financial instrument disputes</div>
+        <div class="case-item">Executive compensation and stock option exercise</div>
+        <div class="case-item">EEOC gender, pregnancy, ethnic, disability, discrimination</div>
+        <div class="case-item">Partnership dissolutions</div>
+        <div class="case-item">Minority shareholder stock valuation</div>
+        <div class="case-item">Real estate issues involving partitions, constructive eviction and disclosure</div>
+        <div class="case-item">Construction defects and development</div>
+        <div class="case-item">Commercial landlord/tenant leases</div>
+        <div class="case-item">Trust and estate disputes between sibling heirs</div>
+        <div class="case-item">Conflicting stock option exercise procedures</div>
+        <div class="case-item">Failed promissory notes</div>
+        <div class="case-item">Breach of sales agreement</div>
+        <div class="case-item">National sports franchise employment dispute</div>
+        <div class="case-item">Software developer/video game publisher contract interpretation</div>
+        <div class="case-item">Distribution of proceeds from recovered art</div>
+        <div class="case-item">Trademark disputes in apparel industry</div>
+        <div class="case-item">Substantial jewelry valuation dispute</div>
+        <div class="case-item">Breach of fiduciary and fraud claims against investment management firms</div>
+        <div class="case-item">Condo and HOA dispute involving multiple insurance carriers</div>
+      </div>
+      <button class="cases-toggle" onclick="toggleCases('mediatedMore', this)">Show More Cases ↓</button>
+    </div>
+
+    <p class="fade-in" style="text-align:center; font-style:italic; color: var(--text-muted); margin-top:20px;">References available upon request</p>
+  </div>
+</section>
+
+<!-- ===== ADR ACTIVITIES ===== -->
+<section class="adr" id="adr">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">ADR Activities</span>
+      <h2 class="section-title">Rosters, Leadership &amp; Training</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <!-- Rosters -->
+    <div class="adr-category fade-in">
+      <h3>Rosters &amp; Panels</h3>
+      <ul class="adr-list">
+        <li><a href="https://www.icdr.org" target="_blank" rel="noopener">International Centre for Dispute Resolution (ICDR)</a></li>
+        <li><a href="http://www.adr.org" target="_blank" rel="noopener">American Arbitration Association</a> — Large and Complex Case, National Commercial, Labor and Employment Arbitration and Mediation Panels</li>
+        <li><a href="http://www.imimediation.org" target="_blank" rel="noopener">Certified Mediator, International Mediation Institute (IMI)</a></li>
+        <li>Member, Panel of Distinguished Neutrals, <a href="http://www.cpradr.org" target="_blank" rel="noopener">International Institute for Conflict Prevention and Resolution (CPR)</a></li>
+        <li>Singapore International Mediation Centre (SIMC)</li>
+        <li>Korean Commercial Arbitration Board (KCAB)</li>
+        <li>Florence International Mediation Chambers (FIMC)</li>
+        <li>U.S. District Court — Northern District of California ADR Program</li>
+        <li>American Health Lawyers Association (AHLA) ADR Panel</li>
+        <li>Permanent Arbitration Panel, Labor Disputes, Federal Aviation Administration (FAA) and National Air Traffic Controllers Association (NATCA); Internal Revenue Service and NTEU</li>
+        <li>Chairperson, Wage Board Hearings, California Industrial Welfare Commission (9/96)</li>
+        <li>Federal Mediation and Conciliation Service</li>
+        <li>San Mateo County Superior Court Mediator, Arbitrator, Neutral Evaluation Panel Member</li>
+        <li>Office of the Independent Administrator (Kaiser Foundation Health)</li>
+      </ul>
+    </div>
+
+    <!-- Teaching -->
+    <div class="adr-category fade-in">
+      <h3>Teaching &amp; Instruction</h3>
+      <div class="adr-role-grid">
+        <div class="adr-role-card">
+          <div class="adr-role-title">Adjunct Professor</div>
+          <div class="adr-role-desc">UC LAW, San Francisco (formerly Hastings College of the Law) — "Arbitration and ADR Law" 1995–2005</div>
+        </div>
+        <div class="adr-role-card">
+          <div class="adr-role-title">Instructor</div>
+          <div class="adr-role-desc">ABA Advanced Mediator Training Institute — Philadelphia 2009, Fort Lauderdale 2010, Nashville 2013, San Antonio 2014</div>
+        </div>
+        <div class="adr-role-card">
+          <div class="adr-role-title">Instructor</div>
+          <div class="adr-role-desc">AAA Commercial Arbitrator Training; California Arbitrator Ethics Standard Review</div>
+        </div>
+        <div class="adr-role-card">
+          <div class="adr-role-title">Instructor</div>
+          <div class="adr-role-desc">ABA Advanced Arbitrator Training Institute — San Francisco 2004, Chicago 2005, New York 2006, Washington D.C. 2014</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Training -->
+    <div class="adr-category fade-in">
+      <h3>Training</h3>
+      <ul class="adr-list">
+        <li>Harvard Law School Mediation Workshop, Program of Instruction for Lawyers 1994</li>
+        <li>Advanced Mediator's Forum, JAMS/Endispute and Pepperdine University 1997</li>
+        <li>Master's Forum, Pepperdine University 2003</li>
+        <li>American Arbitration Association Commercial Arbitrator Training Workshops</li>
+        <li>CPR e-Discovery Orientation and Training for Neutrals 2008</li>
+        <li>Numerous bar, Federal Court and other professional sponsored courses and seminars</li>
+      </ul>
+    </div>
+
+    <!-- Honors -->
+    <div class="adr-category fade-in">
+      <h3>Honors &amp; Recognition</h3>
+      <div class="adr-role-grid">
+        <div class="adr-role-card">
+          <div class="adr-role-title">2023</div>
+          <div class="adr-role-desc">Distinguished Service Award for ADR, California Lawyers Association</div>
+        </div>
+        <div class="adr-role-card">
+          <div class="adr-role-title">Recurring</div>
+          <div class="adr-role-desc">Northern California Super Lawyer</div>
+        </div>
+        <div class="adr-role-card">
+          <div class="adr-role-title">Recurring</div>
+          <div class="adr-role-desc">Best Lawyers Northern California</div>
+        </div>
+        <div class="adr-role-card">
+          <div class="adr-role-title">2008</div>
+          <div class="adr-role-desc">Outstanding Achievement in the Field of Mediation, The Mediation Society</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Leadership -->
+    <div class="adr-category fade-in">
+      <h3>Leadership &amp; Memberships</h3>
+      <ul class="adr-list">
+        <li><strong>Council Member:</strong> American Arbitration Association–International Centre for Dispute Resolution (AAA-ICDR) 2019 – Continuing</li>
+        <li><strong>Co-chair:</strong> AAA/ICDR Council Mediation Committee; Member, Arbitration and Law and Practice Standing Committees</li>
+        <li><strong>Board of Directors:</strong> California Arbitration 2022–2024</li>
+        <li><strong>Chair:</strong> Dispute Resolution Section, American Bar Association 2013–2014</li>
+        <li><strong>Founder:</strong> WIDR (Women in Dispute Resolution) of ABA</li>
+        <li><strong>President:</strong> <a href="http://www.mediationsociety.org" target="_blank" rel="noopener">The Mediation Society</a> 2006–2007</li>
+        <li><strong>President:</strong> <a href="http://www.cdrc.net" target="_blank" rel="noopener">California Dispute Resolution Council (CDRC)</a> 2002, Director 1999–2004</li>
+        <li><strong>Chair:</strong> Bar Association of San Francisco, Arbitration Committee 2000–2002</li>
+        <li><strong>Liaison:</strong> ABA Commission on Women in the Profession (2014–2020)</li>
+        <li><strong>Certified Mediator &amp; Member:</strong> International Mediation Institute (IMI), Independent Advisory Committee (2019–2021)</li>
+        <li><strong>Governor &amp; Distinguished Fellow:</strong> <a href="http://www.iamed.org/" target="_blank" rel="noopener">International Academy of Mediators (Governor 2017–2018)</a></li>
+        <li><strong>Fellow:</strong> <a href="http://www.ciarb.org/" target="_blank" rel="noopener">Chartered Institute of Arbitrators</a></li>
+        <li><strong>Director &amp; Fellow:</strong> <a href="http://www.collegeofcommercialarbitrators.com" target="_blank" rel="noopener">College of Commercial Arbitrators (Director 2003–2008)</a></li>
+        <li><strong>Vice Chair:</strong> ADR Committee, Business Law Section, Cal. State Bar 2007–2008</li>
+        <li><strong>Co-Conference Chair:</strong> ABA Dispute Resolution Section Annual Meeting, New York April 2009, San Francisco 2010</li>
+        <li><strong>Co-program Chair:</strong> ABA Dispute Resolution Section Annual Meeting, Seattle 2008, New York 2009, and San Francisco 2010</li>
+        <li><strong>District Governor:</strong> California Women Lawyers (1996–1999)</li>
+        <li><strong>Member:</strong> U.S. Supreme Court Bar 2018</li>
+        <li><strong>Member:</strong> American Arbitration Association Mediation Strategy Committee 2017</li>
+        <li><strong>Member:</strong> State Bar of California Litigation Section Executive Committee (2011–2014)</li>
+        <li><strong>Member:</strong> Ninth Circuit Court of Appeal, Alternative Dispute Resolution Committee (2006–2008)</li>
+        <li><strong>Member:</strong> Civil/Judicial ADR Advisory Committee, San Mateo Superior Court (2006–2008)</li>
+      </ul>
+    </div>
+
+    <!-- Licenses -->
+    <div class="adr-category fade-in">
+      <h3>Licenses &amp; Admissions</h3>
+      <div class="adr-role-grid">
+        <div class="adr-role-card">
+          <div class="adr-role-title">License</div>
+          <div class="adr-role-desc">State Bar of California (active), State Bar of Illinois (retired)</div>
+        </div>
+        <div class="adr-role-card">
+          <div class="adr-role-title">Admitted</div>
+          <div class="adr-role-desc">U.S. Supreme Court</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PUBLICATIONS ===== -->
+<section class="publications" id="publications">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Publications</span>
+      <h2 class="section-title">Publications &amp; Presentations</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <!-- Book Chapters -->
+    <div class="pub-category fade-in">
+      <h3>Book Chapters</h3>
+      <ul class="pub-list">
+        <li>"Ethics in Contractual Arbitration," <em>A Litigator's Guide to Effective Use of ADR in California</em>, CEB 2005</li>
+        <li>"Arbitrator Ethics and Disclosure," <em>California ADR Practice Guide</em> — Matthew Bender, Lexis Nexis 2004</li>
+        <li>"Appointment Disclosures and Disqualification of Neutral Arbitrators," <em>A Guide to Best Practices For Commercial Arbitrators</em>, College of Commercial Arbitrators, 2005 (co-author)</li>
+      </ul>
+    </div>
+
+    <!-- Articles -->
+    <div class="pub-category fade-in">
+      <h3>Articles</h3>
+      <ul class="pub-list">
+        <li>"Social Media Revisited: A New Look at Arbitration Disclosure in the Age of Interconnectivity," by Gary Benton and Ruth V. Glick, ABA DR Section E-Newsletter, April 2018</li>
+        <li>"Guided Decision Making: Promoting Settlement During Arbitration," NYSBA New York Dispute Resolution Lawyer, Fall 2015, Vol 8, No. 2</li>
+        <li>"Effective Advocacy and Efficiency in Commercial Arbitration," The Woman Advocate, ABA, Section of Litigation, Winter 2013, Vol. 18, No. 2</li>
+        <li>"Arbitrator Disclosure in the Internet Age," by Ruth V. Glick and Laura J. Stipanowich, Dispute Resolution Journal, AAA, February–April 2012</li>
+        <li>"Was That Mediation or Arbitration? Two New California Cases Beg The Question Again," Business Law News, State Bar of California, Issue 3, 2006</li>
+        <li>"Was it Mediation or Arbitration? Be Sure Everyone is on the Same Page," Business Law News, State Bar of California, Issue 2, 2006</li>
+        <li>Case Law Commentaries, California Civil Litigation Reporter, Volume 27/Number 4, August 2005</li>
+        <li>"New Advice for Arbitrators: Disclose, Disclose, Disclose," SF Daily Journal, 11/26/04</li>
+        <li>"California Arbitration Reform, The Aftermath," 38 U.S.F. L. Rev. 119 (2003)</li>
+        <li>"Arbitrator Disclosure: Recommendation for a New UAA Statute," 13 Ohio State Journal on Dispute Resolution 89 (1997)</li>
+      </ul>
+    </div>
+
+    <!-- Publications -->
+    <div class="pub-category fade-in">
+      <h3>Other Publications</h3>
+      <ul class="pub-list">
+        <li>"Disclosure: The Cornerstone of Integrity and Fairness in Arbitration," <em>The Neutral Corner</em>, FINRA 2011</li>
+        <li>"Practice Tips for Arbitrator Disclosure," The Neutral Corner, NASD, Feb. 2005</li>
+        <li>"Should CA Ethics Rules Be Adopted Nationwide?," ABA Dispute Resolution Journal, Fall 2002</li>
+        <li>"Enforcement of Arbitration Contracts: Unconscionability Defense," California Litigation, 12/99</li>
+        <li>"Revisiting Unconscionability in Consumer Arbitration Contracts in California," ABA, 5/1/99</li>
+        <li>"Write It Down," Lack of Reasoned Opinion Supports Vacating Award, SF Daily Journal, 10/29/98</li>
+      </ul>
+    </div>
+
+    <!-- Presentations -->
+    <div class="pub-category fade-in">
+      <h3>Selected Presentations</h3>
+      <div class="presentations-container">
+        <ul class="pub-list">
+          <li>"Settlement Facilitation in the Course of Arbitration," ABA DR Section Annual Conference, April 11, 2024, San Diego</li>
+          <li>"Women in Arbitration, California Stories," March 11, 2024, California International Arbitration Week, San Francisco</li>
+          <li>"Is There a Role for Arbitrators in Settlement?" CLA Webinar, October 5, 2023</li>
+          <li>"International Commercial Arbitration in Philippines and California: A Meeting of the Minds," Webinar, Cal/Arb, July 27, 2023</li>
+          <li>"Mediation and Settlement Facilitation in the Course of Arbitration: Perspectives from the U.S., Asia and Latin America," Webinar, California Lawyers Association, March 17, 2023</li>
+          <li>"An International Arbitration Primer: Why Arbitrate International Disputes?" Webinar, California Lawyers Association, Moderator and Panelist, February 22, 2022</li>
+          <li>"Arbitrating and Mediating in the New Normal: Lessons Learned &amp; Best Practices for Litigators," California Lawyers Association Webinar, October 26, 2020</li>
+          <li>"Mediator-Litigator Dialogue: What do Litigators and Mediators Expect of Each Other?" California Lawyers Association, Litigation and Appellate Summit Webinar, October 20, 2020, Moderator</li>
+          <li>"Arbitrating Domestic and International Life Sciences Disputes: Differences and Complexities," AAA-ICDR Webinar, October 8, 2020, Moderator</li>
+          <li>"How Arbitrators Think and How To Make Them Think Better of You and Your Case," California Lawyers Association (CLA), July 22, 2020</li>
+          <li>"International Arbitration Practice: Perspectives From the Field," Stanford Law School, March 7, 2019</li>
+          <li>"Dispelling Myths About Arbitration," Webinar, American Bar Association, February 22, 2019</li>
+          <li>"Tips for Success and Pitfalls to Avoid in Arbitration," Webinar, Continuing Education of the Bar (CEB), February 8, 2019</li>
+          <li>"Master Mediators: Effective Techniques and Strategies to Maximize Settlement at Mediation," California Litigation Summit, October 5, 2018, San Francisco</li>
+          <li>"The Shape of Things: Women in Dispute Resolution," California Women Lawyers and AAA, October 4, 2018, San Francisco</li>
+          <li>"How to Improve Mediation Advocacy in Employment Mediation," ABA and San Francisco Bar Association, June 7, 2018</li>
+          <li>"Hot Topics in Arbitration, New Opportunities, New Challenges," California State Bar Litigation Summit, October 13, 2017, San Francisco</li>
+          <li>"Avoiding Pitfalls in Drafting Arbitration Awards," Webinar, July 25, 2017, ABA Dispute Resolution Section</li>
+          <li>"Ten Essential Tips to Succeed in ADR, Mediation Arbitration &amp; More," Webinar, May 26, 2017, AAA</li>
+          <li>"Third Party Funding: What Arbitrators Need to Know," ABA DR Annual Conference, April 20, 2016, San Francisco</li>
+          <li>Global Pound Conference, San Francisco, February 24, 2017, Moderator</li>
+          <li>"Arbitration and Mediation in Cross Border Disputes: Possibilities and Limitations," Pepperdine School of Law, February 10, 2017</li>
+          <li>"Making Arbitration Great Again," ABA Litigation Section Webinar, January 24, 2017</li>
+          <li>"Ten Essential Tips for Success in ADR to Build Your Practice," Webinar, ABA Women Rainmakers and WIDR, August 10, 2016</li>
+          <li>"Employment Mediation: A View Behind the Curtain," Webinar, October 21, 2015, ABA</li>
+          <li>"How to Become an Arbitrator," MCCA CLE Expo, October 5, 2015, San Diego</li>
+          <li>"Linked In – Conflicted Out – Arbitrator Disclosure in the Internet Age," ABA DR Section Annual Meeting, Seattle, 2015</li>
+          <li>"Appropriate Relationship Between Arbitration, Mediation and Settlement," ABA DR Section Annual Meeting, Seattle, 2015</li>
+          <li>"When Arbitrator Disclosure Meets Social Media: New Obligations in the Internet Age," AAA Webinar, December 10, 2014</li>
+          <li>"Mock Mediation," Moderator and panelist, ABA Annual Labor &amp; Employment Law Conference, Los Angeles, November 8, 2014</li>
+          <li>"Stories Mediators Tell: The Good, The Bad, The Ideal," AAA, San Francisco, October 2014</li>
+          <li>"New Ethics Standards for Neutral Arbitrators," California State Bar Annual Meeting, San Diego, September 2014</li>
+          <li>"Effective Use of Mediation: A View From In-House Counsel," California State Bar, Litigation Section, San Francisco March 2013, Los Angeles May 2014</li>
+          <li>"Personal Branding &amp; Social Media Marketing for ADR Success," ABA Webinar, February 27, 2014</li>
+          <li>"Preventing the Runaway Arbitration: From Drafting the Contract Through the Award," ABA Annual Meeting, San Francisco, August 9, 2013</li>
+          <li>"Women Advocates and Dispute Resolvers: Strategies for Success," ABA Annual Meeting, San Francisco, August 8, 2013</li>
+          <li>"Mediator Selection: What Goes Into It?" The Mediation Society, San Francisco, June 6, 2013</li>
+          <li>"Women in Dispute Resolution: Challenges and Strategies," ABA DR Section, Chicago, April 5, 2013</li>
+          <li>"Dealing with Difficult People in Mediation," The Mediation Society, February 15, 2012</li>
+          <li>"Managing Your First Arbitration," DePaul Law School, Chicago, 2011</li>
+          <li>"Best Practices: How to Reduce Time and Cost of Commercial Arbitration," Litigation Section, State Bar of California, Sacramento 2011</li>
+          <li>"Protocols for Expeditious, Cost-Effective Commercial Arbitration," ABA, Atlanta, February 2011</li>
+          <li>"Mediation: Prepare, Present and Produce the Best Results for Your Client," CA State Bar, Monterey, September 24, 2010</li>
+          <li>"Update Your ADR IQ: ADR Options and Acronyms," CA State Bar, Monterey, September 23, 2010</li>
+          <li>"Analyze This and Do It Ethically," ABA DR Conference, San Francisco, April 9, 2010</li>
+          <li>"Rules of the Road: How to Navigate Legal Land Mines of Mediation," ABA Annual Meeting, Chicago, July 31, 2009</li>
+          <li>"Getting to... Successful Arbitration &amp; Mediation," California Women Lawyers Annual Meeting, Half Moon Bay, June 5, 2009</li>
+          <li>Moderator, "Current Mediation Trends, Strategies and Techniques," The Mediation Society Education Day 2008</li>
+          <li>"When Should Counsel Reject a Mediator or Arbitrator?" San Mateo Bar Association, November 2007</li>
+          <li>"Discuss it with the Mediator Roundtable," Employment Law Section 25th Annual Meeting, State Bar of California, October 2007</li>
+          <li>"The Ultimate ADR Update," State Bar of California Annual Meeting, Anaheim 2007</li>
+          <li>"Mediation for the Non-Litigator," State Bar of California Annual Meeting, Anaheim 2007</li>
+          <li>ADR Happenings, State Bar of California, Monterey 2006</li>
+          <li>The Bulletproof Award, ABA, Atlanta 2006</li>
+          <li>Med-Arb: Practical Panacea or Ethical Sandtrap, CA BAR, Santa Monica 2006</li>
+          <li>ADR Happenings, State Bar of California, San Diego 2005</li>
+          <li>Mediation and Arbitration Practice: Skills for the Successful Advocate, CEB, Los Angeles and San Francisco, May 2005</li>
+          <li>Best Practices in Advocacy to Maximize Potential Gains in Mediation, ABA, Los Angeles, April 2005</li>
+          <li>The New Commercial Arbitrator Code of Ethics, Treasuring the Minefield, ABA, Los Angeles, April 2005</li>
+          <li>Arbitrator Disclosure Workshop, AAA &amp; BASF, San Francisco, February 2005</li>
+          <li>ADR Happenings, State Bar of California, Monterey 8/2004</li>
+          <li>Arbitration Policy Panels, CDRC, San Francisco 2003, Los Angeles 2004</li>
+          <li>The Ten Worst Mistakes Lawyers Make in Arbitration, AAA, 2002/03/04</li>
+          <li>What You Must Know About New ADR Ethics Rules, Santa Clara Bar Association, June 3, 2003</li>
+          <li>Arbitration: Theory v. Reality, ABA, San Francisco, May 16, 2003</li>
+          <li>Anatomy of an Arbitration, ABA, San Antonio, March 20, 2003</li>
+          <li>Advanced Mediation and Advocacy Skills, ABA, San Francisco, December 2002</li>
+          <li>ADR at the Crossroads, Santa Clara Bar Association, December 11, 2001</li>
+          <li>Drafting ADR Clauses — For Better or Worse, CA Bar Real Property Retreat, San Diego 4/00</li>
+          <li>Evolving Issues in Arbitration and Mediation, Lawyers Club of S.F. Am. Inn of Court, 4/00</li>
+          <li>Women in ADR, ADR Section Meeting of ABA, April 2000, San Francisco</li>
+          <li>How to Represent a Client in Mediation, Santa Clara Bar Association, June 23, 1999</li>
+          <li>ADR in the New Millennium, Consumer ADR issues, ABA, Boston, April 1999</li>
+          <li>The Arbitration Award, Bar Association of San Francisco, September 14, 1998</li>
+          <li>Raising the Curtain on ADR Changes, Santa Clara Bar Association, June 30, 1998</li>
+          <li>ADR — How to Use It to Your Advantage, ALI/ABA Course of Study, March 1998</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BACKGROUND ===== -->
+<section class="background-section" id="background">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Background</span>
+      <h2 class="section-title">A Unique Perspective</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="background-content fade-in">
+      <p>Ruth Glick combines a business and legal background to provide unique and pragmatic skills to facilitate settlements between parties. As a former currency and financial instruments trader on the Chicago Mercantile Exchange's International Monetary Market in Chicago, Ms. Glick mediated very large monetary disputes among traders and institutional market participants.</p>
+
+      <p>As an executive vice president of a foreign exchange arbitrage firm in charge of floor operations, Ms. Glick developed the business sense and pragmatism necessary to fashion satisfactory settlement options for disputing parties. As the host of a daily television program in Chicago showcasing top business and government leaders, Ms. Glick gained the reputation of a fair and impartial moderator who carefully evaluated the issues and built a consensus among disparate participants.</p>
+
+      <p>And as a judicial extern for the Honorable William A. Newsom, First District, California State Court of Appeal, Ms. Glick developed the skills to evaluate the legal implications of the dispute.</p>
+
+      <p>Ms. Glick was an adjunct professor at UC Law, San Francisco (formerly Hastings College of the Law) teaching arbitration and ADR Law for 10 years. She has authored numerous book chapters, law articles for law reviews and professional publications and has made presentations on ADR topics to bar associations and other professional organizations.</p>
+
+      <p>She is on the Large and Complex Case Panel, National Commercial, Health Care, Real Estate, Labor and Employment Arbitration and Mediation panels of the American Arbitration Association, International Centre for Dispute Resolution (ICDR), and International Institute for Conflict Prevention &amp; Resolution (CPR), Office of the Independent Administrator (Kaiser Healthcare) as well as a number of court, industry and permanent government and international ADR panels. She has served as a mediator and arbitrator for a number of complex commercial and employment disputes and is listed annually as a Super Lawyer of Northern California and recently received the Distinguished Service Award for ADR from the California Lawyers Association.</p>
+
+      <p>Ms. Glick was the Chair of the Dispute Resolution Section of the American Bar Association during the 2013–2014 term. During her tenure on the 18,000 member DR Section, she founded WIDR (Women in Dispute Resolution), a growing national and international movement to raise awareness about using qualified women neutrals in proportion to their numbers in the profession.</p>
+
+      <p>Ms. Glick was elected to the Council of the American Arbitration Association–International Centre for Dispute Resolution (AAA-ICDR) in 2019 and is currently serving a second term. She has served as a member of the Executive Committee of the Litigation Section of the California State Bar, was a past President of the Mediation Society of San Francisco, past President and Legislative Chair of the California Dispute Resolution Council (CDRC), a statewide organization representing the interests of ADR practitioners in Sacramento.</p>
+
+      <div class="background-edu">
+        <h4>Education &amp; Credentials</h4>
+        <p>She is a Fellow of the Chartered Institute of Arbitrators (FCIArb), Fellow and former Director of the College of Commercial Arbitrators, Distinguished Fellow of The International Academy of Mediators, member of the National Academy of Distinguished Neutrals, a Certified Mediator with the International Mediation Institute and a former member of the 9th Circuit Court of Appeals ADR committee.</p>
+        <p><strong>B.A.</strong> — Northwestern University, Evanston, Illinois</p>
+        <p><strong>J.D.</strong> — University of California, Hastings College of the Law</p>
+        <p><strong>Mediation Training</strong> — Harvard Law School, Program of Instruction for Lawyers</p>
+        <p><strong>U.S. Intellectual Property Law</strong> — Stanford Law School, 2021 Summer Session</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REFERENCES ===== -->
+<section class="references" id="references">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">References</span>
+      <h2 class="section-title">Press &amp; Recognition</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="ref-cards fade-in">
+      <div class="ref-card">
+        <div class="ref-card-title">"Setting the Stage: Ruth Glick believes neutrals do their most important work before a mediation session"</div>
+        <div class="ref-card-source">Daily Journal — Shane Nelson, February 2021</div>
+      </div>
+      <div class="ref-card">
+        <div class="ref-card-title">"A Mediator You Can Deal With, Says Attorneys"</div>
+        <div class="ref-card-source">Daily Journal — Craig Anderson, July 2006</div>
+      </div>
+      <div class="ref-card">
+        <div class="ref-card-title">Featured in Hastings College of the Law Magazine</div>
+        <div class="ref-card-source">Spring 2010</div>
+      </div>
+    </div>
+    <div class="ref-badges fade-in">
+      <div class="ref-badge">CCA Fellow</div>
+      <div class="ref-badge">IMI Certified</div>
+      <div class="ref-badge">Super Lawyers</div>
+      <div class="ref-badge">IAM Fellow</div>
+      <div class="ref-badge">AAA Panel</div>
+      <div class="ref-badge">CIArb Fellow</div>
+      <div class="ref-badge">CPR Neutral</div>
+      <div class="ref-badge">AHLA Panel</div>
+    </div>
+    <p class="ref-note fade-in">References Available Upon Request</p>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Contact</span>
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info fade-in">
+        <h3>Ruth V. Glick</h3>
+        <p class="contact-role">Attorney at Law — Arbitration, Mediation &amp; Dispute Resolution</p>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          </div>
+          <div class="contact-detail-text">
+            <div class="contact-detail-label">Office</div>
+            <div class="contact-detail-value">1325 Howard Ave. #512<br>Burlingame, CA 94010</div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          </div>
+          <div class="contact-detail-text">
+            <div class="contact-detail-label">Telephone</div>
+            <div class="contact-detail-value"><a href="tel:+16503442144">(650) 344-2144</a></div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24"><path d="M19 8l-7 5-7-5V6l7 5 7-5v2zm0-4H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z"/></svg>
+          </div>
+          <div class="contact-detail-text">
+            <div class="contact-detail-label">Email</div>
+            <div class="contact-detail-value"><a href="mailto:rvg@ruthvglick.com">rvg@ruthvglick.com</a></div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24"><path d="M19 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h4l3 3 3-3h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 16h-4.83L12 20.17 9.83 18H5V4h14v14z"/></svg>
+          </div>
+          <div class="contact-detail-text">
+            <div class="contact-detail-label">Fax</div>
+            <div class="contact-detail-value">(650) 344-2522</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-map fade-in fade-in-delay-1">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.2!2d-122.3477!3d37.5785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f9e1e25bb2c83%3A0x9d5e9b9b8e8e8e8e!2s1325+Howard+Ave+%23512%2C+Burlingame%2C+CA+94010!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="contact-map-label">📍 1325 Howard Ave. #512, Burlingame, CA 94010</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h4>Ruth V. Glick</h4>
+        <p>Independent Arbitrator &amp; Mediator with over 1,000 disputes resolved. Serving on AAA, ICDR, CPR, and ICC panels.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#adr">ADR Activities</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#background">Background</a></li>
+          <li><a href="#references">References</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Contact</h5>
+        <div class="footer-contact-item"><a href="tel:+16503442144">Tel: (650) 344-2144</a></div>
+        <div class="footer-contact-item">Fax: (650) 344-2522</div>
+        <div class="footer-contact-item"><a href="mailto:rvg@ruthvglick.com">rvg@ruthvglick.com</a></div>
+        <div class="footer-contact-item" style="margin-top:8px;">1325 Howard Ave. #512<br>Burlingame, CA 94010</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Ruth V. Glick. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+// ===== NAVBAR SCROLL =====
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// ===== MOBILE NAV =====
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+navToggle.addEventListener('click', () => {
+  navToggle.classList.toggle('open');
+  navLinks.classList.toggle('open');
+});
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navToggle.classList.remove('open');
+    navLinks.classList.remove('open');
+  });
+});
+
+// ===== ACTIVE NAV LINK =====
+const sections = document.querySelectorAll('section[id]');
+function updateActiveLink() {
+  const scrollY = window.scrollY + 120;
+  sections.forEach(section => {
+    const top = section.offsetTop;
+    const height = section.offsetHeight;
+    const id = section.getAttribute('id');
+    const link = navLinks.querySelector(`a[href="#${id}"]`);
+    if (link) {
+      if (scrollY >= top && scrollY < top + height) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    }
+  });
+}
+window.addEventListener('scroll', updateActiveLink);
+
+// ===== FADE IN ANIMATIONS =====
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// ===== TOGGLE CASES =====
+function toggleCases(id, btn) {
+  const el = document.getElementById(id);
+  el.classList.toggle('show');
+  if (el.classList.contains('show')) {
+    btn.textContent = 'Show Less ↑';
+  } else {
+    btn.textContent = 'Show More Cases ↓';
+  }
+}
+</script>
+
+</body>
+</html>
