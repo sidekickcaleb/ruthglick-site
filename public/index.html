@@ -234,13 +234,25 @@
     .hero-photo-frame::before {
       display: none;
     }
+    /* Vignette overlay that bleeds photo into navy background */
+    .hero-photo-frame::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 8px;
+      background:
+        linear-gradient(to bottom, transparent 55%, var(--navy-deep) 100%),
+        linear-gradient(to right, var(--navy-deep) 0%, transparent 10% 90%, var(--navy-deep) 100%),
+        linear-gradient(to top, transparent 85%, var(--navy-deep) 100%);
+      z-index: 2;
+      pointer-events: none;
+    }
     .hero-photo {
       position: relative;
       z-index: 1;
       width: 100%;
       border-radius: 8px;
-      box-shadow: 0 25px 60px rgba(0,0,0,0.4);
-      mix-blend-mode: luminosity;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.5);
       display: block;
     }
     .hero-cta {
